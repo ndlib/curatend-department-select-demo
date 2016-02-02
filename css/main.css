@@ -80,6 +80,7 @@ body {
 
 .main-container {
   background: white;
+  min-height: 12em;
 }
 
 html,
@@ -159,7 +160,12 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
-
+.footer-container a,
+.footer-container a:active,
+.footer-container a:hover,
+.footer-container a:visited {
+  color: white;
+}
 
 
 
