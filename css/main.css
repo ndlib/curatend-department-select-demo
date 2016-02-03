@@ -80,7 +80,6 @@ body {
 
 .main-container {
   background: white;
-  min-height: 12em;
 }
 
 html,
@@ -160,24 +159,37 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+.main-container {
+  min-height: 16em;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+label,
+.select2-results__group {
+  border-bottom: 1px solid #f1f1f1;
+  font-variant: small-caps;
+  letter-spacing: .05em;
+  text-transform: lowercase;
+}
+
+.select2-results__option + .select2-results__option .select2-results__group {
+  border-top: 1px solid #f1f1f1;
+}
+
+html .select2-container--default .select2-results>.select2-results__options {
+  max-height: 300px;
+}
+
 .footer-container a,
 .footer-container a:active,
 .footer-container a:hover,
 .footer-container a:visited {
   color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Media Queries
